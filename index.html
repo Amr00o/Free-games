@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="x-icon" href="Image/png-transparent.png">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/hover-min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Free gaming</title>
+</head>
+<body>
+    
+
+  <!-- loading screen -->
+
+    <div class="loading d-flex justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+
+    <!-- ButtonUp -->
+
+    <button id="btnUp" class="btn bg-info p-2 rounded-circle">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container p-3">
+          <a class="navbar-brand" href="#"><i class="fa-solid fs-2 fa-gamepad text-info"></i></a>
+          <button class="navbar-toggler bg-info border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse me-4" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a id="homePage" class="nav-link active fs-5" aria-current="page" href="#">All games</a>
+                  </li>
+                  <li class="nav-item">
+                      <a id="favoritePage" class="nav-link fs-5" aria-current="page" href="#">favourite</a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- category -->
+          <div id="options">
+          <div class="d-flex align-items-center">
+              <p class="textGat fs-6 mt-3 me-3 ms-5">Category:</p>
+              <select id="moreCate" class="mt-2">
+                  <option disabled="" value="select_category" selected="" class="text-center">Select Category</option>
+                  <option value="Action">Action</option>
+                  <option value="Anime">Anime</option>
+                  <option value="First-Person">First-Person</option>
+                  <option value="Flight">Flight</option>
+                  <option value="Pixel">Pixel</option>
+                  <option value="Sandbox">Sandbox</option>
+                  <option value="Superhero">Superhero</option>
+                  <option value="Survival">Survival</option>
+                  <option value="Voxel">Voxel</option>
+                  <option value="Zombie">Zombie</option>                  
+              </select>
+          </div>
+        </div>
+          <div id="option">
+          <div class="d-flex align-items-center">
+              <p class="textGat fs-6 mt-3 me-3 ms-5">Top 10 category:</p>
+              <select id="category" class="mt-2">
+                  <option disabled="" value="select_category" selected="" class="text-center">Select Top 10</option>
+                  <option value="Card">Top Card</option>
+                  <option value="Fighting">Top Fighting</option>
+                  <option value="MMO">Top MMO</option>
+                  <option value="MMORPG">Top MMORPG</option>
+                  <option value="Moba">Top Moba</option>
+                  <option value="Racing">Top Racing</option>
+                  <option value="Shooter">Top Shooter</option>
+                  <option value="Social">Top Social</option>
+                  <option value="Sports">Top Sports</option>
+                  <option value="Strategy">Top Strategy</option>
+              </select>
+          </div>
+        </div>
+      </div>
+  </nav>
+  
+
+
+      <!-- start home and category and search -->
+
+      <section id="home" class="d-blok">
+        <div class="container">
+          <div class="title text-center p-3 py-4 mb-5">
+            <h3 id="textCat" class="mt-5 mb-5">Welcom in the best website for free gaming</h3>
+            <input type="search" id="search" placeholder="Search games..." class="mb-3 w-50">
+          </div>
+        <div id="allData" class="row gy-5">
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- end home -->
+
+      <!-- start details -->
+
+      <section id="details" class="d-none">
+        <div class="container mt-5 p-3">
+          <div id="AllDetails" class="row">
+            <div class="col-md-4">
+              <div class="imgDetails">
+                <img id="imgDetails" src="" class="w-100 mt-2" alt="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="descDetails">
+                <h2 id="titleDetails" class="text-white"></h2>
+                <p id="desDetails"></p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="moreDetails mt-5">
+                <h3 class="fs-4">Additional Information</h3>
+              <div id="Detinformation" class="row mt-5">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- end details -->
+       
+
+      <!-- start favorites -->
+
+      <section id="favorites" class="d-none mt-5">
+        <div class="container mt-5 p-3">
+            <div id="favoPageContent" class="row mt-5">
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- end favorites -->
+    
+
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
